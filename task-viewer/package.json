@@ -1,0 +1,21 @@
+{
+  "name": "task-viewer",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start-react": "cd ../react-app && npm start",
+    "start-electron": "electron .",
+    "start": "concurrently \"npm run start-react\" \"wait-on http://localhost:3000 && npm run start-electron\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "electron": "^32.1.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "wait-on": "^8.0.1"
+  }
+}
